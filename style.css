@@ -1,0 +1,28 @@
+:root{--navy:#1b1f4b;--purple:#6b3fa0;--ink:#22223a;--soft:#f6f3fb;--line:#e4def0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:19px/1.7 Georgia,'Times New Roman',serif;color:var(--ink);background:#fff}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+.hero{background:var(--soft);padding:56px 0 24px;border-bottom:1px solid var(--line)}
+h1{font:700 clamp(2.4rem,8vw,3.6rem)/1.1 system-ui,sans-serif;color:var(--navy);margin:.2em 0}
+h2{font:700 clamp(1.7rem,5vw,2.2rem)/1.2 system-ui,sans-serif;color:var(--navy);margin:.2em 0 .6em}
+h3{font:600 1.4rem/1.3 system-ui,sans-serif;color:var(--navy);margin:1.8em 0 .1em}
+h4{font:600 1.1rem/1.4 system-ui,sans-serif;color:var(--navy);margin:1.6em 0 .3em}
+.eyebrow{font:600 .85rem system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--purple);margin:0}
+.lead{font-size:1.2rem}.org{color:var(--purple);font:600 .95rem system-ui,sans-serif;margin:0 0 .6em}
+nav{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:22px}
+nav a{font:600 1rem system-ui,sans-serif;color:var(--navy);text-decoration:none;padding:10px 0;min-height:44px;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--purple)}
+section{padding:48px 0;border-bottom:1px solid var(--line)}
+a{color:var(--purple)}
+.index{list-style:none;padding:0;margin:24px 0 0}
+.index a{display:block;padding:14px 0;border-top:1px solid var(--line);text-decoration:none;color:var(--navy);font:600 1.1rem system-ui,sans-serif}
+.index span{color:var(--purple);margin-right:14px}.index small{display:block;font:400 .95rem Georgia,serif;color:#555;margin-left:34px}
+.facts{margin:18px 0;padding:0}.facts div{padding:12px 0;border-top:1px solid var(--line)}
+.facts dt{font:600 .8rem system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--purple)}.facts dd{margin:2px 0 0}
+figure{margin:20px 0}img{max-width:100%;height:auto;display:block;border-radius:4px}
+figcaption,.cap,.note{font-size:.95rem;color:#555}
+.strip{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 0 12px}
+.strip a{flex:0 0 78%;scroll-snap-align:start}.strip img{border:1px solid var(--line)}
+.doc p{margin:0 0 1em}footer{padding:32px 0;background:var(--soft);font-size:.95rem}
+@media(max-width:600px){body{font-size:18px}.strip a{flex-basis:88%}}
+.doc,figcaption,p{overflow-wrap:anywhere}
